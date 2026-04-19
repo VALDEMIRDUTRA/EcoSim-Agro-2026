@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSim Agro 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoSim Agro 2026</h1>
+        <p>Equilíbrio entre produção e meio ambiente</p>
+    </header>
+
+    <main id="game-container">
+        <div class="stats">
+            <div>Dinheiro: R$ <span id="dinheiro">500</span></div>
+            <div>Turno: <span id="turno">1</span>/10</div>
+        </div>
+        
+        <div class="status-solo">
+            <p>Saúde do Solo: <span id="solo-texto">100</span>%</p>
+            <div class="barra-fundo">
+                <div id="barra-progresso" class="barra-preenchimento"></div>
+            </div>
+        </div>
+
+        <div id="display-area">
+            <p id="mensagem">Bem-vindo, produtor! Escolha como usar sua terra nesta rodada.</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn-acao" data-acao="monocultura">Monocultura (Lucro Rápido)</button>
+            <button class="btn-acao" data-acao="rotacao">Rotação de Culturas (Sustentável)</button>
+            <button class="btn-acao" data-acao="descanso">Descanso do Solo (Recuperação)</button>
+        </div>
+    </main>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
